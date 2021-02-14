@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite" parallel="methods">
+    <listeners>
+        <listener class-name="analyze.AnnotationTransformer"></listener>
+    </listeners>
+    <test thread-count="10" name="Deneme" parallel="methods">
+        <classes>
+            <class name="tests.MovieTest"/>
+        </classes>
+    </test>
+</suite>
